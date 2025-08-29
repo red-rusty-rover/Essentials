@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: weird box.ma
-//Last modified: Fri, Aug 29, 2025 03:22:52 PM
+//Last modified: Fri, Aug 29, 2025 03:25:12 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "49B1EA45-4BF5-120E-8A97-E1BB6D5B7528";
+fileInfo "UUID" "57FD6B96-47C3-C53B-DE52-77BFE3823037";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "DB6B29BA-4814-C5C7-7090-37B37614DC61";
@@ -86,16 +86,16 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.625 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.3968794 -0.71378082 -1.3479023 
-		-0.75821549 1.6916277 -1.8959311 1.1209273 -1.8682023 -0.25687185 0.75958925 0.53720266 
-		-0.80490142 0.95629144 -1.8239286 1.5466199 0.44773707 0.6684261 1.3444815 -0.90199345 
-		-0.39295682 1.0127894 -1.2633275 2.0124507 0.46476078;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.39687943 -0.58399838 -1.6392095 
+		-0.75821549 1.8214114 -2.1872385 1.1209273 -1.7384192 -0.54817903 0.7595892 0.66698527 
+		-1.0962086 0.95629144 -1.8239286 1.5466199 0.44773707 0.6684261 1.3444815 -0.90199345 
+		-0.26317438 0.7214821 -1.2633275 2.1422341 0.17345351;
 createNode transform -n "nurbsSphere1";
 	rename -uid "7CC63ABC-418C-4F1E-1E56-CB8D169619B7";
 createNode nurbsSurface -n "nurbsSphereShape1" -p "nurbsSphere1";
