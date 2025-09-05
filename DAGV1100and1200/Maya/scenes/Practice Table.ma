@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Practice Table.ma
-//Last modified: Fri, Sep 05, 2025 03:06:59 PM
+//Last modified: Fri, Sep 05, 2025 03:09:49 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "8AAC4E03-4406-8CF4-F3E8-F1BCD6555B43";
+fileInfo "UUID" "1741AE0D-4552-C009-17F3-DE9541AB5213";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "926F8665-4F0B-2280-6926-33A1ABB56A57";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -56.698735659413899 25.701705819006044 -0.73539982921557367 ;
-	setAttr ".r" -type "double3" -12.938352727683872 -82.199999999820179 -1.1717721939868935e-14 ;
+	setAttr ".t" -type "double3" -15.505776211749861 22.854342381585599 -97.852660233620625 ;
+	setAttr ".r" -type "double3" -6.3383527277194709 554.59999999984257 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A6746708-4331-4532-340A-EFBC790BA3C2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 60.194470438691312;
+	setAttr ".coi" 86.712626393413586;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3300,10 +3300,10 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -2.2525008 0.29022753 2.6412382 
-		2.2525008 0.29022753 2.6412382 -2.2525008 -0.29022753 2.6412382 2.2525008 -0.29022753 
-		2.6412382 -2.2525008 -0.29022753 -2.6412382 2.2525008 -0.29022753 -2.6412382 -2.2525008 
-		0.29022753 -2.6412382 2.2525008 0.29022753 -2.6412382;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -2.2525008 0.29022753 2.3632822 
+		2.2525008 0.29022753 2.3632822 -2.2525008 -0.29022753 2.3632822 2.2525008 -0.29022753 
+		2.3632822 -2.2525008 -0.29022753 -2.3632822 2.2525008 -0.29022753 -2.3632822 -2.2525008 
+		0.29022753 -2.3632822 2.2525008 0.29022753 -2.3632822;
 createNode transform -n "pCylinder1";
 	rename -uid "DC27CE07-4B03-5797-A2EF-F5A0DBDC4E5B";
 	setAttr ".t" -type "double3" 1.5203716199697683 0.070484331885724227 -10.676952568886698 ;
