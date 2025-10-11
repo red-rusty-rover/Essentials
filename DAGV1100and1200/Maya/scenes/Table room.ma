@@ -1,30 +1,31 @@
 //Maya ASCII 2026 scene
 //Name: Table room.ma
-//Last modified: Fri, Oct 10, 2025 02:28:11 PM
+//Last modified: Sat, Oct 11, 2025 01:39:38 PM
 //Codeset: 1252
+file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
+file -r -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "C9D68EA6-4EF3-618C-DD20-A58C6D208233";
+fileInfo "UUID" "39E6D200-4CC3-D589-2F48-15972B20340F";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F3E703AC-4343-8020-D925-DD9EFCA81792";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -129.41105385094721 89.16986889077026 -14.471828193456574 ;
-	setAttr ".r" -type "double3" -32.738352744475023 4580.600000003732 0 ;
+	setAttr ".t" -type "double3" -91.005938084894652 19.456335877751201 -50.858463484562016 ;
+	setAttr ".r" -type "double3" -7.5383527444814789 4562.6000000035938 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5789213-4C98-F1D2-7652-77AFDA24C4FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 178.02087654823643;
+	setAttr ".coi" 123.64766809962386;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -39928,20 +39929,20 @@ createNode mesh -n "Wall_WindowedShape" -p "Wall_Windowed";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9A1A4C87-4B8F-00B9-D67A-DCB275ABE941";
+	rename -uid "336EE3DD-4D6D-D568-5D9A-808EB3C2E818";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D9E81D6F-4944-5BA1-A1FA-2B8BEBD9F61C";
+	rename -uid "EA1C5EE3-4548-70B8-F032-7B84ACB1A80C";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D48A22A4-49FB-62FF-9F92-82B853512E46";
+	rename -uid "0951E1AF-4CF2-CC48-93CD-138F0D4C20A1";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "980A356A-4AEB-F57D-B420-8B8BCB276378";
+	rename -uid "F842E5CD-4197-AE2C-BD72-3E98DA448CA8";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E881ED15-4D0A-4753-55C8-24956A057F67";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "45C3CE6C-42C2-96CE-3F64-05973EBDFDD1";
+	rename -uid "5E1B7DC3-4E37-B79B-F0B1-BBB47E267B51";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "08539A0F-47D7-B606-7669-A2823617C1F5";
 	setAttr ".g" yes;
@@ -40023,6 +40024,15 @@ createNode groupId -n "groupId7";
 createNode groupId -n "groupId8";
 	rename -uid "D76DC2AC-4464-6166-3873-CD8F9BB1BB15";
 	setAttr ".ihi" 0;
+createNode reference -n "LampRN";
+	rename -uid "6EDAFA59-4281-CDAA-0090-F0B339860537";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"LampRN"
+		"LampRN" 0
+		"LampRN" 1
+		2 "|Lamp:Lamp" "translate" " -type \"double3\" 1.81975875054789071 9.08274429143527406 -4.30201229970518817";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -40041,6 +40051,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -40048,7 +40059,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 172 ".dsm";
+	setAttr -s 173 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 3 ".gn";
 select -ne :initialParticleSE;
@@ -40071,8 +40082,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "groupId6.id" "Wall_WindowedShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Wall_WindowedShape.iog.og[0].gco";
 connectAttr "groupId7.id" "Wall_WindowedShape.iog.og[1].gid";
