@@ -1,31 +1,34 @@
 //Maya ASCII 2026 scene
 //Name: Table room.ma
-//Last modified: Sat, Oct 11, 2025 01:39:38 PM
+//Last modified: Tue, Oct 21, 2025 03:28:05 PM
 //Codeset: 1252
 file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
+file -rdi 1 -ns "Cushion" -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 file -r -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
+file -r -ns "Cushion" -dr 1 -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "39E6D200-4CC3-D589-2F48-15972B20340F";
+fileInfo "UUID" "E9DA5A06-488E-19AE-5556-86AE64778CA3";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F3E703AC-4343-8020-D925-DD9EFCA81792";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -91.005938084894652 19.456335877751201 -50.858463484562016 ;
-	setAttr ".r" -type "double3" -7.5383527444814789 4562.6000000035938 0 ;
+	setAttr ".t" -type "double3" 28.180975999412411 48.960987338497986 -37.142399306723469 ;
+	setAttr ".r" -type "double3" -40.538352744501204 4453.0000000036116 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5789213-4C98-F1D2-7652-77AFDA24C4FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 123.64766809962386;
+	setAttr ".coi" 71.574516526994969;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -39929,20 +39932,20 @@ createNode mesh -n "Wall_WindowedShape" -p "Wall_Windowed";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "336EE3DD-4D6D-D568-5D9A-808EB3C2E818";
+	rename -uid "A9848DA2-4850-9C7E-0C9D-91801407E722";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "EA1C5EE3-4548-70B8-F032-7B84ACB1A80C";
+	rename -uid "7E656D93-4E26-53CD-5697-0C94B7DCF616";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0951E1AF-4CF2-CC48-93CD-138F0D4C20A1";
+	rename -uid "5B541BA1-4D53-6D77-1135-5495AC298306";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F842E5CD-4197-AE2C-BD72-3E98DA448CA8";
+	rename -uid "57CE80F4-4EA7-7DE8-A36C-7EBB7BC81573";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E881ED15-4D0A-4753-55C8-24956A057F67";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5E1B7DC3-4E37-B79B-F0B1-BBB47E267B51";
+	rename -uid "00981A4F-4671-DA04-D00D-44AADAB92FF9";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "08539A0F-47D7-B606-7669-A2823617C1F5";
 	setAttr ".g" yes;
@@ -40033,6 +40036,15 @@ createNode reference -n "LampRN";
 		2 "|Lamp:Lamp" "translate" " -type \"double3\" 1.81975875054789071 9.08274429143527406 -4.30201229970518817";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "CushionRN";
+	rename -uid "8103931F-45E7-38B3-0518-05ACFD8CBC82";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"CushionRN"
+		"CushionRN" 0
+		"CushionRN" 1
+		2 "|Cushion:Cushion" "translate" " -type \"double3\" -15.74228331989886343 3.51438142242572482 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -40051,7 +40063,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 2 ".r";
+	setAttr -s 3 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -40059,7 +40071,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 173 ".dsm";
+	setAttr -s 174 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 3 ".gn";
 select -ne :initialParticleSE;
