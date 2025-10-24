@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Round Chair.ma
-//Last modified: Fri, Oct 24, 2025 11:38:08 AM
+//Last modified: Fri, Oct 24, 2025 11:49:08 AM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "B5F5FE9C-482D-F924-0EC3-A4BAB9698FE6";
+fileInfo "UUID" "AA7D9A8B-4087-4AE3-54F1-D38CA07EFDF1";
 createNode transform -n "Chair";
 	rename -uid "ABA642B0-4769-8237-D8F9-05A36ECE82F4";
 createNode mesh -n "ChairShape" -p "Chair";
@@ -3782,7 +3782,7 @@ createNode mesh -n "Ch_Armrest_RShape" -p "Ch_Armrest_R";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.87742605805397034 0.44437718391418457 ;
+	setAttr ".pv" -type "double2" 0.50170183181762695 0.49894426763057709 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -4829,13 +4829,13 @@ createNode mesh -n "polySurfaceShape1" -p "Chair";
 createNode transform -s -n "persp";
 	rename -uid "2D42410A-422D-7DEF-08FC-91922B9A69F4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.752256057456062 12.849427918315248 -12.653173515443722 ;
-	setAttr ".r" -type "double3" -11.738352729554849 119.00000000002812 0 ;
+	setAttr ".t" -type "double3" 36.739089026429973 12.226346642279223 11.842900518345974 ;
+	setAttr ".r" -type "double3" -8.7383527295547889 79.400000000027561 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5E0A4519-47E7-5885-9B86-B5BC848FC4C5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 31.131852460419545;
+	setAttr ".coi" 53.781445507934414;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
