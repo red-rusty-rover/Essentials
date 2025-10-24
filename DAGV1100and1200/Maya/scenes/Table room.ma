@@ -1,18 +1,18 @@
 //Maya ASCII 2025ff03 scene
 //Name: Table room.ma
-//Last modified: Fri, Oct 24, 2025 03:22:05 PM
+//Last modified: Fri, Oct 24, 2025 03:27:16 PM
 //Codeset: 1252
 file -rdi 1 -ns "Cushion" -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 file -rdi 1 -ns "Table_Mine" -rfn "Table_MineRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table_Mine.ma";
-file -rdi 1 -ns "Lamp1" -rfn "LampRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
 file -rdi 1 -ns "Round_Chair" -rfn "Round_ChairRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Round Chair.ma";
+file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
 file -r -ns "Cushion" -dr 1 -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 file -r -ns "Table_Mine" -dr 1 -rfn "Table_MineRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table_Mine.ma";
-file -r -ns "Lamp1" -dr 1 -rfn "LampRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
 file -r -ns "Round_Chair" -dr 1 -rfn "Round_ChairRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Round Chair.ma";
+file -r -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -23,18 +23,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "9C37E950-4537-92D7-0B68-ACA95CED4A59";
+fileInfo "UUID" "703AEB9D-494D-0C40-4439-048B587B3AFE";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F3E703AC-4343-8020-D925-DD9EFCA81792";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -103.22831759539545 53.835453908712438 -65.634443230634261 ;
-	setAttr ".r" -type "double3" -20.138352745002052 4557.4000000031792 0 ;
+	setAttr ".t" -type "double3" -87.347392705520065 35.698321445042275 4.6540941964024167 ;
+	setAttr ".r" -type "double3" -16.538352745001955 4595.4000000031756 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5789213-4C98-F1D2-7652-77AFDA24C4FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 123.64766809968606;
+	setAttr ".coi" 85.834165239932346;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -30118,20 +30118,20 @@ createNode mesh -n "Wall_WindowedShape" -p "Wall_Windowed";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2FF938E2-4007-24CD-0EF7-CBAA74214306";
+	rename -uid "FC5210F0-4181-BDA2-A4BA-BA9F5925B7AF";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "7C43BBD1-4A30-420B-E149-B49886E534E5";
+	rename -uid "69C62AC4-44EA-3E31-B6D1-05B7691C42FF";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6B3662B6-47A0-64C5-D6DF-F6BD3C54021C";
+	rename -uid "B543E323-47AE-09C5-F534-9395B5009A19";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C58EE713-47BE-BE59-DD01-20BB0CD963FB";
+	rename -uid "8E073AE6-48C5-7777-1245-BDA348BBD5E7";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E881ED15-4D0A-4753-55C8-24956A057F67";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "097995DE-47E5-29FB-5505-3A87346CCEB9";
+	rename -uid "05297AD8-47F3-DED7-B698-E3A16723379D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "08539A0F-47D7-B606-7669-A2823617C1F5";
 	setAttr ".g" yes;
@@ -30278,20 +30278,18 @@ createNode reference -n "Table_MineRN";
 		"Table_MineRN" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "LampRN1";
-	rename -uid "C809C8BC-450F-DAC9-EDE8-1A87B8DEA51D";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"LampRN1"
-		"LampRN1" 0
-		"LampRN1" 1
-		2 "|Lamp1:Lamp" "translate" " -type \"double3\" 1.863 9.07 -5.944";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "Round_ChairRN";
 	rename -uid "FCC273C6-42E2-6F70-C18B-E891E315A0B8";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Round_ChairRN"
 		"Round_ChairRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "LampRN";
+	rename -uid "F1A67501-44C1-BFC0-FA80-F9886127A275";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"LampRN"
+		"LampRN" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
