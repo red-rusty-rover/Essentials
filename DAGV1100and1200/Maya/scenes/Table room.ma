@@ -1,50 +1,50 @@
 //Maya ASCII 2025ff03 scene
 //Name: Table room.ma
-//Last modified: Fri, Oct 24, 2025 03:51:10 PM
+//Last modified: Fri, Oct 31, 2025 03:59:29 PM
 //Codeset: 1252
-file -rdi 1 -ns "Cushion" -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 file -rdi 1 -ns "Table_Mine" -rfn "Table_MineRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table_Mine.ma";
 file -rdi 1 -ns "Round_Chair" -rfn "Round_ChairRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Round Chair.ma";
 file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
+file -rdi 1 -ns "Cushion1" -rfn "CushionRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
+file -rdi 1 -ns "Walls1" -rfn "WallsRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Walls.ma";
+file -rdi 1 -ns "Vase_Decorative1" -rfn "Vase_DecorativeRN1" -op "v=0;" -typ
+		 "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Vase_Decorative.ma";
 file -rdi 1 -ns "Bookshelf_Mine" -rfn "Bookshelf_MineRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Bookshelf_Mine.ma";
-file -rdi 1 -ns "Walls" -rfn "WallsRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Walls.ma";
-file -rdi 1 -ns "Vase_Decorative" -rfn "Vase_DecorativeRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Vase_Decorative.ma";
-file -r -ns "Cushion" -dr 1 -rfn "CushionRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
 file -r -ns "Table_Mine" -dr 1 -rfn "Table_MineRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table_Mine.ma";
 file -r -ns "Round_Chair" -dr 1 -rfn "Round_ChairRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Round Chair.ma";
 file -r -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Lamp.ma";
+file -r -ns "Cushion1" -dr 1 -rfn "CushionRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Cushion.ma";
+file -r -ns "Walls1" -dr 1 -rfn "WallsRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Walls.ma";
+file -r -ns "Vase_Decorative1" -dr 1 -rfn "Vase_DecorativeRN1" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Vase_Decorative.ma";
 file -r -ns "Bookshelf_Mine" -dr 1 -rfn "Bookshelf_MineRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Bookshelf_Mine.ma";
-file -r -ns "Walls" -dr 1 -rfn "WallsRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Walls.ma";
-file -r -ns "Vase_Decorative" -dr 1 -rfn "Vase_DecorativeRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Vase_Decorative.ma";
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
-		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.4.5";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
+		 "mtoa" "5.4.5";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "B67DB52C-47EC-7060-3656-8CBEA683F8B2";
+fileInfo "UUID" "095B3EBC-4C12-694A-DA14-1D8371EDB4DC";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F3E703AC-4343-8020-D925-DD9EFCA81792";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -144.86470949840501 77.561490572640508 -6.4202006684630533 ;
-	setAttr ".r" -type "double3" -21.938352744855329 4588.2000000031749 5.0888874903416268e-14 ;
+	setAttr ".t" -type "double3" -145.10066512934662 54.422292339230296 -88.352413375271098 ;
+	setAttr ".r" -type "double3" -12.938352744858943 4557.4000000026617 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5789213-4C98-F1D2-7652-77AFDA24C4FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 153.28476035905348;
+	setAttr ".coi" 190.0255631140397;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -107,7 +107,7 @@ createNode mesh -n "FloorShape" -p "Floor";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.49999992549419403 0.49999993885551675 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -13252,68 +13252,21 @@ createNode mesh -n "pasted__pasted__pasted__book2Shape" -p "|Bookshelf_1|Bk_Grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "key";
-	rename -uid "6D1682B2-4AE4-926B-ACE6-FE84C89BE900";
-	setAttr ".t" -type "double3" 14.954847463208271 36.65324941437953 -39.955878508172205 ;
-	setAttr ".r" -type "double3" -35.972976040944438 157.75873915974677 11.610187412925299 ;
-	setAttr ".s" -type "double3" 15.487426659920164 15.487426659920164 15.487426659920164 ;
-createNode aiAreaLight -n "keyShape" -p "key";
-	rename -uid "7DAB4092-4D42-C28C-94A3-5D8EF8393209";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".intensity" 10;
-	setAttr ".ai_exposure" 5;
-	setAttr ".ai_samples" 2;
-	setAttr ".ai_spread" 0.17647059261798859;
-	setAttr ".ai_translator" -type "string" "disk";
-	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
-createNode transform -n "rim";
-	rename -uid "F6B8BBF1-43DA-D9AB-43FD-EF91A9602F84";
-	setAttr ".t" -type "double3" -28.4867219539369 7.9714137871965711 22.515327857622676 ;
-	setAttr ".r" -type "double3" 0 299.99999999999989 0 ;
-	setAttr ".s" -type "double3" 5.2653049191369758 5.2653049191369758 5.2653049191369758 ;
-createNode aiAreaLight -n "rimShape" -p "rim";
-	rename -uid "C293783D-4180-19FC-196B-A092BE18855F";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".intensity" 1.9871795177459717;
-	setAttr ".ai_exposure" 4.0259737968444824;
-	setAttr ".ai_translator" -type "string" "quad";
-	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
-createNode transform -n "fill";
-	rename -uid "2C2F5791-4E56-F8BB-89E7-098344F3F059";
-	setAttr ".t" -type "double3" -25.757800665210524 24.579664303953471 -29.883752964276809 ;
-	setAttr ".r" -type "double3" 0 45.000000000000014 0 ;
-	setAttr ".s" -type "double3" 11.276222461141591 11.276222461141591 11.276222461141591 ;
-createNode aiAreaLight -n "fillShape" -p "fill";
-	rename -uid "4BA26B21-447E-6578-17D6-DBB2290E2E1A";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".intensity" 3.5897436141967773;
-	setAttr ".ai_exposure" -3.6363637447357178;
-	setAttr ".ai_translator" -type "string" "quad";
-	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "FC5210F0-4181-BDA2-A4BA-BA9F5925B7AF";
+	rename -uid "F2EAB3EB-42D6-FCA6-3B1C-CAA89045D372";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "69C62AC4-44EA-3E31-B6D1-05B7691C42FF";
+	rename -uid "434D9884-4DA3-1641-2E7E-B0AA9D878FE1";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B543E323-47AE-09C5-F534-9395B5009A19";
+	rename -uid "7ACB0713-4BD2-3C94-9D88-5EAC98A35661";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "8E073AE6-48C5-7777-1245-BDA348BBD5E7";
+	rename -uid "070EE60A-4935-FBAB-BDA8-FAA9C7AA1B6A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E881ED15-4D0A-4753-55C8-24956A057F67";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "05297AD8-47F3-DED7-B698-E3A16723379D";
+	rename -uid "3FAE6AD4-4E47-DEDC-E635-169795E82A87";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "08539A0F-47D7-B606-7669-A2823617C1F5";
 	setAttr ".g" yes;
@@ -13358,8 +13311,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n"
 		+ "                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n"
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
-		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n"
-		+ "                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n"
+		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
@@ -13384,56 +13337,6 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".output_mode" 0;
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "89F50405-4862-99C2-B63E-03AA5B1ADD59";
-createNode reference -n "CushionRN";
-	rename -uid "8103931F-45E7-38B3-0518-05ACFD8CBC82";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"CushionRN"
-		"CushionRN" 0
-		"CushionRN" 9
-		2 "|Cushion:Cushion" "translate" " -type \"double3\" 0 0 0"
-		2 "|Cushion:Cushion" "rotatePivot" " -type \"double3\" 0 0 0"
-		2 "|Cushion:Cushion" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pnts" " -s 682"
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pt[0:165]" (" -type \"float3\" -15.637877 6.10254809999999992 -0.033923551000000003 -15.65347 6.10254809999999992 -0.064526423999999999 -15.677756 6.09256550000000008 -0.088812954999999999 -15.70836 6.10254809999999992 -0.10440597 -15.742283 6.10254809999999992 -0.10977887 -15.776206 6.10254809999999992 -0.10440597 -15.806809 6.10254809999999992 -0.088812954999999999 -15.831096 6.0824423000000003 -0.064526394000000001 -15.846689 6.10254809999999992 -0.033923540000000002 -15.852061 6.10254809999999992 -3.1973267999999997e-08 -15.846689 6.10254809999999992 0.033923492 -15.831096 6.10254809999999992 0.064526342 -15.806809 6.09256550000000008 0.088812849999999999 -15.776206 6.10254809999999992 0.10440589 -15.742283 6.10254809999999992 0.10977879 -15.70836 6.10254809999999992 0.10440582 -15.677756 6.10254809999999992 0.088812849999999999 -15.65347 6.0824423000000003 0.064526342 -15.637877 6.10254809999999992 0.033923480999999998 -15.632504 6.10254809999999992 -3.1973267999999997e-08 -15.22074 6.109005 -0.16945942 -15.298633 6.10"
-		+ "9005 -0.32233088999999998 -15.419952 6.09833810000000032 -0.44365041999999999 -15.560135 6.109005 -0.51953267999999997 -15.754972 6.109005 -0.55039172999999997 -15.911742 6.109005 -0.52154230999999995 -16.064613 6.109005 -0.44365025000000002 -16.185932 6.08752159999999964 -0.32233079999999997 -16.263824 6.109005 -0.16945932999999999 -16.290665 6.109005 0 -16.263824 6.109005 0.16945932999999999 -16.185932 6.109005 0.32233079999999997 -16.064613 6.09833810000000032 0.44365025000000002 -15.911742 6.109005 0.52154206999999997 -15.742283 6.109005 0.54838180999999997 -15.572824 6.109005 0.52154206999999997 -15.419952 6.109005 0.44365016000000002 -15.298633 6.08752159999999964 0.32233067999999998 -15.220741 6.109005 0.16945930000000001 -15.193901 6.109005 0 -14.976062 6.11747460000000043 -0.24896024 -15.090496 6.11747460000000043 -0.47355058999999999 -15.268732 6.10591029999999968 -0.65178645000000002 -15.493322 6.11747460000000043 -0.76622075000000001 -15.742283 6.11747460000000043 -0.80565249999999999 -15.991243 6"
-		+ ".11747460000000043 -0.76622075000000001 -16.215834 6.11747460000000043 -0.65178632999999997 -16.39407 6.09418389999999999 -0.47355047 -16.508503 6.11747460000000043 -0.24896024 -16.547935 6.11747460000000043 0 -16.508503 6.11747460000000043 0.24896024 -16.39407 6.11747460000000043 0.47355032000000002 -16.215834 6.10591029999999968 0.65178614999999995 -15.991243 6.11747460000000043 0.76622075000000001 -15.742283 6.11747460000000043 0.80565195999999994 -15.493322 6.11747460000000043 0.76622075000000001 -15.268732 6.11747460000000043 0.65178614999999995 -15.090497 6.09418389999999999 0.47355032000000002 -14.976063 6.11747460000000043 0.24896011000000001 -14.936631 6.11747460000000043 0 -14.750251 6.11813119999999966 -0.32233088999999998 -14.898409 6.11813119999999966 -0.61310995000000001 -15.129173 6.10649680000000039 -0.84387356000000002 -15.419952 6.11813119999999966 -0.99203240999999998 -15.742283 6.11813119999999966 -1.04308460000000003 -16.064613 6.11813119999999966 -0.99203222999999996 -16.355392 6.1181311"
-		+ "9999999966 -0.84387301999999997 -16.586155 6.09469990000000017 -0.61310964999999995 -16.734316 6.11813119999999966 -0.32233079999999997 -16.785366 6.11813119999999966 0 -16.734316 6.11813119999999966 0.32233079999999997 -16.586155 6.11813119999999966 0.61310964999999995 -16.355392 6.10649680000000039 0.84387301999999997 -16.064613 6.11813119999999966 0.99203193000000001 -15.742283 6.11813119999999966 1.04308409999999996 -15.419952 6.11813119999999966 0.99203193000000001 -15.129173 6.11813119999999966 0.84387301999999997 -14.89841 6.09469990000000017 0.61310964999999995 -14.750251 6.11813119999999966 0.32233067999999998 -14.699199 6.11813119999999966 0 -14.548866 6.11596779999999995 -0.38776474999999999 -14.727102 6.11596779999999995 -0.73757218999999996 -15.004711 6.10456280000000007 -1.01518109999999995 -15.354518 6.11596779999999995 -1.193417 -15.742283 6.11596779999999995 -1.25483380000000011 -16.130047 6.11596779999999995 -1.193417 -16.479855 6.11596779999999995 -1.01518069999999994 -16.757463 6.092998 -0"
-		+ ".73757218999999996 -16.935699 6.11596779999999995 -0.38776448000000002 -16.997116 6.11596779999999995 0 -16.935699 6.11596779999999995 0.38776448000000002 -16.757463 6.11596779999999995 0.73757183999999998 -16.479855 6.10456280000000007 1.01518069999999994 -16.130047 6.11596779999999995 1.193417 -15.742283 6.11596779999999995 1.25483250000000002 -15.354519 6.11596779999999995 1.193417 -15.004711 6.11596779999999995 1.01518069999999994 -14.727102 6.092998 0.73757183999999998 -14.548866 6.11596779999999995 0.38776448000000002 -14.487451 6.11596779999999995 0 -14.376867 6.09780649999999991 -0.44365041999999999 -14.580791 6.09780649999999991 -0.84387356000000002 -14.898409 6.088326 -1.16149189999999991 -15.298633 6.09780649999999991 -1.36541559999999995 -15.742283 6.09780649999999991 -1.43568279999999993 -16.185934 6.09780649999999991 -1.36541519999999994 -16.586155 6.09780649999999991 -1.16149189999999991 -16.903774 6.0787129000000002 -0.84387301999999997 -17.107698 6.09780649999999991 -0.44365025000000002 -17.1"
-		+ "77965 6.09780649999999991 0 -17.107698 6.09780649999999991 0.44365025000000002 -16.903774 6.09780649999999991 0.84387301999999997 -16.586155 6.088326 1.1614913 -16.185932 6.09780649999999991 1.36541519999999994 -15.742283 6.09780649999999991 1.43568209999999996 -15.298633 6.09780649999999991 1.36541519999999994 -14.89841 6.09780649999999991 1.1614913 -14.580791 6.0787129000000002 0.84387301999999997 -14.376867 6.09780649999999991 0.44365016000000002 -14.306601 6.09780649999999991 0 -14.23849 6.07744220000000013 -0.48861217000000001 -14.463079 6.07744220000000013 -0.92939514000000001 -14.812888 6.0701198999999999 -1.27920290000000003 -15.253671 6.07744220000000013 -1.50379309999999999 -15.742283 6.07744220000000013 -1.5811812999999999 -16.230894 6.07744220000000013 -1.50379309999999999 -16.671679 6.07744220000000013 -1.27920250000000002 -17.021484 6.062695 -0.92939484000000006 -17.246077 6.07744220000000013 -0.48861173000000002 -17.323463 6.07744220000000013 0 -17.246077 6.07744220000000013 0.48861173000000002"
-		+ " -17.021484 6.07744220000000013 0.92939484000000006 -16.671679 6.0701198999999999 1.27920220000000007 -16.230894 6.07744220000000013 1.50379309999999999 -15.742283 6.07744220000000013 1.5811812999999999 -15.253672 6.07744220000000013 1.50379309999999999 -14.812888 6.07744220000000013 1.27920220000000007 -14.46308 6.062695 0.92939484000000006 -14.238491 6.07744220000000013 0.48861173000000002 -14.161101 6.07744220000000013 0 -14.072371 6.00468250000000037 -0.54258728000000001 -14.321771 6.00468250000000037 -1.03206229999999999 -14.71022 6.00507019999999958 -1.4205118000000001 -15.199696 6.00468250000000037 -1.66991160000000005 -15.742283 6.00468250000000037 -1.75584910000000005 -16.28487 6.00468250000000037 -1.66991139999999993 -16.774345 6.00468250000000037 -1.4205118000000001 -17.162794 6.00546359999999968 -1.03206179999999992 -17.412193 6.00468250000000037 -0.54258698000000005 -17.498133 6.00468250000000037 -5.5887596999999999e-09 -17.412193 6.00468250000000037 0.54258698000000005 -17.162794 6.0046825000000"
-		+ "0037 1.03206149999999997 -16.774343 6.00507019999999958 1.42051079999999996 -16.28487 6.00468250000000037 1.66991139999999993 -15.742283 6.00468250000000037 1.75584910000000005 -15.199697 6.00468250000000037 1.66991139999999993 -14.710221 6.00468250000000037 1.42051079999999996 -14.321772 6.00546359999999968 1.03206149999999997 -14.072371 6.00468250000000037 0.54258698000000005 -13.986434 6.00468250000000037 -5.5887596999999999e-09 -14.23849 5.93924430000000037 -0.48861217000000001 -14.463079 5.93924430000000037 -0.92939514000000001 -14.812888 5.9465665999999997 -1.27920290000000003 -15.253671 5.93924430000000037 -1.50379309999999999 -15.742283 5.93924430000000037 -1.5811812999999999 -16.230894 5.93924430000000037 -1.50379309999999999"
-		)
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pt[166:331]" (" -16.671679 5.93924430000000037 -1.27920250000000002 -17.021484 5.95399190000000011 -0.92939484000000006 -17.246077 5.93924430000000037 -0.48861173000000002 -17.323463 5.93924430000000037 0 -17.246077 5.93924430000000037 0.48861173000000002 -17.021484 5.93924430000000037 0.92939484000000006 -16.671679 5.9465665999999997 1.27920220000000007 -16.230894 5.93924430000000037 1.50379309999999999 -15.742283 5.93924430000000037 1.5811812999999999 -15.253672 5.93924430000000037 1.50379309999999999 -14.812888 5.93924430000000037 1.27920220000000007 -14.46308 5.95399190000000011 0.92939484000000006 -14.238491 5.93924430000000037 0.48861173000000002 -14.161101 5.93924430000000037 0 -14.376867 5.91888050000000021 -0.44365041999999999 -14.580791 5.91888050000000021 -0.84387356000000002 -14.898409 5.92836090000000038 -1.16149189999999991 -15.298633 5.91888050000000021 -1.36541559999999995 -15.742283 5.91888050000000021 -1.43568279999999993 -16.185934 5.91888050000000021 -1.36541519999999994 -16.586155 5.91888050000000021 -1"
-		+ ".16149189999999991 -16.903774 5.937974 -0.84387301999999997 -17.107698 5.91888050000000021 -0.44365025000000002 -17.177965 5.91888050000000021 0 -17.107698 5.91888050000000021 0.44365025000000002 -16.903774 5.91888050000000021 0.84387301999999997 -16.586155 5.92836090000000038 1.1614913 -16.185932 5.91888050000000021 1.36541519999999994 -15.742283 5.91888050000000021 1.43568209999999996 -15.298633 5.91888050000000021 1.36541519999999994 -14.89841 5.91888050000000021 1.1614913 -14.580791 5.937974 0.84387301999999997 -14.376867 5.91888050000000021 0.44365016000000002 -14.306601 5.91888050000000021 0 -14.548866 5.90071920000000016 -0.38776474999999999 -14.727102 5.90071920000000016 -0.73757218999999996 -15.004711 5.91212420000000005 -1.01518109999999995 -15.354518 5.90071920000000016 -1.193417 -15.742283 5.90071920000000016 -1.25483380000000011 -16.130047 5.90071920000000016 -1.193417 -16.479855 5.90071920000000016 -1.01518069999999994 -16.757463 5.92368890000000015 -0.73757218999999996 -16.935699 5.900719200000"
-		+ "00016 -0.38776448000000002 -16.997116 5.90071920000000016 0 -16.935699 5.90071920000000016 0.38776448000000002 -16.757463 5.90071920000000016 0.73757183999999998 -16.479855 5.91212420000000005 1.01518069999999994 -16.130047 5.90071920000000016 1.193417 -15.742283 5.90071920000000016 1.25483250000000002 -15.354519 5.90071920000000016 1.193417 -15.004711 5.90071920000000016 1.01518069999999994 -14.727102 5.92368890000000015 0.73757183999999998 -14.548866 5.90071920000000016 0.38776448000000002 -14.487451 5.90071920000000016 0 -14.750251 5.89855579999999957 -0.32233088999999998 -14.898409 5.89855579999999957 -0.61310995000000001 -15.129173 5.91018959999999982 -0.84387356000000002 -15.419952 5.89855579999999957 -0.99203240999999998 -15.742283 5.89855579999999957 -1.04308460000000003 -16.064613 5.89855579999999957 -0.99203222999999996 -16.355392 5.89855579999999957 -0.84387301999999997 -16.586155 5.92198660000000032 -0.61310964999999995 -16.734316 5.89855579999999957 -0.32233079999999997 -16.785366 5.8985557999999"
-		+ "9957 0 -16.734316 5.89855579999999957 0.32233079999999997 -16.586155 5.89855579999999957 0.61310964999999995 -16.355392 5.91018959999999982 0.84387301999999997 -16.064613 5.89855579999999957 0.99203193000000001 -15.742283 5.89855579999999957 1.04308409999999996 -15.419952 5.89855579999999957 0.99203193000000001 -15.129173 5.89855579999999957 0.84387301999999997 -14.89841 5.92198660000000032 0.61310964999999995 -14.750251 5.89855579999999957 0.32233067999999998 -14.699199 5.89855579999999957 0 -14.976062 5.89921190000000006 -0.24896024 -15.090496 5.89921190000000006 -0.47355058999999999 -15.268732 5.91077660000000016 -0.65178645000000002 -15.493322 5.89921190000000006 -0.76622075000000001 -15.742283 5.89921190000000006 -0.80565249999999999 -15.991243 5.89921190000000006 -0.76622075000000001 -16.215834 5.89921190000000006 -0.65178632999999997 -16.39407 5.922503 -0.47355047 -16.508503 5.89921190000000006 -0.24896024 -16.547935 5.89921190000000006 0 -16.508503 5.89921190000000006 0.24896024 -16.39407 5.8992119000"
-		+ "0000006 0.47355032000000002 -16.215834 5.91077660000000016 0.65178614999999995 -15.991243 5.89921190000000006 0.76622075000000001 -15.742283 5.89921190000000006 0.80565195999999994 -15.493322 5.89921190000000006 0.76622075000000001 -15.268732 5.89921190000000006 0.65178614999999995 -15.090497 5.922503 0.47355032000000002 -14.976063 5.89921190000000006 0.24896011000000001 -14.936631 5.89921190000000006 0 -15.22074 5.90768149999999981 -0.16945942 -15.298633 5.90768149999999981 -0.32233088999999998 -15.419952 5.91834880000000041 -0.44365041999999999 -15.572824 5.90768149999999981 -0.52154230999999995 -15.742283 5.90768149999999981 -0.54838204000000002 -15.911742 5.90768149999999981 -0.52154230999999995 -16.064613 5.90768149999999981 -0.44365025000000002 -16.185932 5.92916539999999959 -0.32233079999999997 -16.263824 5.90768149999999981 -0.16945932999999999 -16.290665 5.90768149999999981 0 -16.263824 5.90768149999999981 0.16945932999999999 -16.185932 5.90768149999999981 0.32233079999999997 -16.064613 5.91834880000"
-		+ "000041 0.44365025000000002 -15.911742 5.90768149999999981 0.52154206999999997 -15.742283 5.90768149999999981 0.54838180999999997 -15.572824 5.90768149999999981 0.52154206999999997 -15.419952 5.90768149999999981 0.44365016000000002 -15.298633 5.92916539999999959 0.32233067999999998 -15.220741 5.90768149999999981 0.16945930000000001 -15.193901 5.90768149999999981 0 -15.637877 5.91413879999999992 -0.033923551000000003 -15.65347 5.91413879999999992 -0.064526423999999999 -15.677756 5.92412139999999976 -0.088812954999999999 -15.70836 5.91413879999999992 -0.10440597 -15.742283 5.91413879999999992 -0.10977887 -15.776206 5.91413879999999992 -0.10440597 -15.806809 5.91413879999999992 -0.088812954999999999 -15.831096 5.93424420000000019 -0.064526394000000001 -15.846689 5.91413879999999992 -0.033923540000000002 -15.852061 5.91413879999999992 -3.1973267999999997e-08 -15.846689 5.91413879999999992 0.033923492 -15.831096 5.91413879999999992 0.064526342 -15.806809 5.92412139999999976 0.088812849999999999 -15.776206 5.9141387"
-		+ "9999999992 0.10440589 -15.742283 5.91413879999999992 0.10977879 -15.70836 5.91413879999999992 0.10440582 -15.677756 5.91413879999999992 0.088812849999999999 -15.65347 5.93424420000000019 0.064526342 -15.637877 5.91413879999999992 0.033923480999999998 -15.632504 5.91413879999999992 -3.1973267999999997e-08 -15.742283 6.11925510000000017 -2.4773806999999998e-09 -15.742283 5.89743140000000032 -2.4773806999999998e-09 -15.664392 6.11537839999999999 -0.025308366999999998 -15.640323 6.108819 -0.033128935999999998 -15.65555 6.108819 -0.063014983999999996 -15.676024 6.11537839999999999 -0.048139345 -15.679268 6.09817169999999997 -0.086732663000000002 -15.694143 6.10403539999999989 -0.066258079999999997 -15.709154 6.108819 -0.10196038 -15.716974 6.11537839999999999 -0.077891088999999997 -15.742283 6.108819 -0.10720743000000001 -15.742283 6.11537839999999999 -0.081899456999999995 -15.775412 6.108819 -0.10196038 -15.767591 6.11537839999999999 -0.077891058999999999 -15.805298 6.108819 -0.086732663000000002 -15.790422 6.115"
-		+ "37839999999999 -0.066258079999999997 -15.829015 6.08737559999999966 -0.063014947000000002 -15.80854 6.09253409999999995 -0.048139315000000002 -15.844243 6.108819 -0.033128935999999998 -15.820174 6.11537839999999999 -0.025308345999999999 -15.84949 6.108819 -3.2463152e-08 -15.824183 6.11537839999999999 -3.2219943999999995e-08 -15.844243 6.108819 0.033128876000000002 -15.820174 6.11537839999999999 0.025308292 -15.829016 6.108819 0.063014895000000001 -15.808541 6.11537839999999999 0.048139226 -15.805298 6.09817169999999997 0.086732529000000003 -15.790422 6.10403539999999989 0.066257961000000004 -15.775412 6.108819 0.10196031999999999 -15.767591 6.11537839999999999 0.077890970000000004 -15.742283 6.108819 0.10720737 -15.742283 6.11537839999999999 0.081899351999999995"
-		)
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pt[332:497]" (" -15.709154 6.108819 0.10196031999999999 -15.716974 6.11537839999999999 0.077890970000000004 -15.679268 6.108819 0.086732529000000003 -15.694143 6.11537839999999999 0.066257961000000004 -15.655551 6.08737559999999966 0.063014895000000001 -15.676025 6.09253409999999995 0.048139269999999998 -15.640323 6.108819 0.033128868999999998 -15.664392 6.11537839999999999 0.025308286999999999 -15.635076 6.108819 -3.2463152e-08 -15.660383 6.11537839999999999 -5.2608794000000005e-08 -15.640323 5.90786739999999977 -0.033128935999999998 -15.664392 5.90130849999999985 -0.025308366999999998 -15.676024 5.90130849999999985 -0.048139345 -15.65555 5.90786739999999977 -0.063014983999999996 -15.694143 5.91265109999999972 -0.066258079999999997 -15.679268 5.91851519999999987 -0.086732663000000002 -15.716974 5.90130849999999985 -0.077891088999999997 -15.709154 5.90786739999999977 -0.10196038 -15.742283 5.90130849999999985 -0.081899456999999995 -15.742283 5.90786739999999977 -0.10720743000000001 -15.767591 5.90130849999999985 -0.07789105"
-		+ "8999999999 -15.775412 5.90786739999999977 -0.10196038 -15.790422 5.90130849999999985 -0.066258079999999997 -15.805298 5.90786739999999977 -0.086732663000000002 -15.80854 5.92415239999999965 -0.048139315000000002 -15.829015 5.92931130000000017 -0.063014947000000002 -15.820174 5.90130849999999985 -0.025308345999999999 -15.844243 5.90786739999999977 -0.033128935999999998 -15.824183 5.90130849999999985 -3.2219943999999995e-08 -15.84949 5.90786739999999977 -3.2463152e-08 -15.820174 5.90130849999999985 0.025308292 -15.844243 5.90786739999999977 0.033128876000000002 -15.808541 5.90130849999999985 0.048139226 -15.829016 5.90786739999999977 0.063014895000000001 -15.790422 5.91265109999999972 0.066257961000000004 -15.805298 5.91851519999999987 0.086732529000000003 -15.767591 5.90130849999999985 0.077890970000000004 -15.775412 5.90786739999999977 0.10196031999999999 -15.742283 5.90130849999999985 0.081899351999999995 -15.742283 5.90786739999999977 0.10720737 -15.716974 5.90130849999999985 0.077890970000000004 -15.709154"
-		+ " 5.90786739999999977 0.10196031999999999 -15.694143 5.90130849999999985 0.066257961000000004 -15.679268 5.90786739999999977 0.086732529000000003 -15.676025 5.92415239999999965 0.048139269999999998 -15.655551 5.92931130000000017 0.063014895000000001 -15.664392 5.90130849999999985 0.025308286999999999 -15.640323 5.90786739999999977 0.033128868999999998 -15.660383 5.90130849999999985 -5.2608794000000005e-08 -15.635076 5.90786739999999977 -3.2463152e-08 -14.085459 6.0431322999999999 -0.53833443000000003 -14.070995 6.02024939999999997 -0.54303420000000002 -14.332905 6.0431322999999999 -1.02397289999999996 -14.320601 6.02024939999999997 -1.03291230000000001 -14.71831 6.03944589999999959 -1.4093777999999999 -14.709371 6.01898770000000027 -1.4216816000000001 -15.203948 6.0431322999999999 -1.65682379999999996 -15.199248 6.02024939999999997 -1.67128729999999992 -15.742283 6.0431322999999999 -1.74208720000000006 -15.742283 6.02024939999999997 -1.7572954999999999 -16.280617 6.0431322999999999 -1.65682379999999996 -16.285"
-		+ "316 6.02024939999999997 -1.67128729999999992 -16.766256 6.0431322999999999 -1.4093777999999999 -16.775196 6.02024939999999997 -1.42168129999999993 -17.151661 6.0357075 -1.02397289999999996 -17.163963 6.01770829999999979 -1.03291230000000001 -17.399105 6.0431322999999999 -0.53833419000000005 -17.41357 6.02024939999999997 -0.54303396000000004 -17.484369 6.0431322999999999 4.1316026000000001e-09 -17.499578 6.02024939999999997 -1.8906396000000003e-09 -17.399105 6.0431322999999999 0.53833419000000005 -17.41357 6.02024939999999997 0.54303396000000004 -17.151661 6.0431322999999999 1.02397260000000001 -17.163963 6.02024939999999997 1.0329117000000001 -16.766256 6.03944589999999959 1.4093777999999999 -16.775194 6.01898770000000027 1.42168129999999993 -16.280617 6.04313180000000028 1.65682229999999997 -16.285316 6.02024939999999997 1.67128729999999992 -15.742283 6.0431322999999999 1.74208589999999997 -15.742283 6.02024939999999997 1.75729420000000003 -15.203949 6.0431322999999999 1.65682229999999997 -15.199249 6.020249"
-		+ "39999999997 1.67128729999999992 -14.71831 6.0431322999999999 1.40937709999999994 -14.709372 6.02024939999999997 1.42168129999999993 -14.332906 6.0357075 1.02397260000000001 -14.320601 6.01770829999999979 1.0329117000000001 -14.085461 6.04313180000000028 0.53833419000000005 -14.070995 6.02024939999999997 0.54303396000000004 -14.000196 6.0431322999999999 4.1316026000000001e-09 -13.984989 6.02024939999999997 -1.8906392000000002e-09 -14.070995 5.99643709999999963 -0.54303420000000002 -14.085459 5.97355459999999994 -0.53833443000000003 -14.320601 5.99643709999999963 -1.03291230000000001 -14.332905 5.97355459999999994 -1.02397289999999996 -14.709371 5.99769880000000022 -1.4216816000000001 -14.71831 5.977241 -1.4093777999999999 -15.199248 5.99643709999999963 -1.67128729999999992 -15.203948 5.97355459999999994 -1.65682379999999996 -15.742283 5.99643709999999963 -1.7572954999999999 -15.742283 5.97355459999999994 -1.74208720000000006 -16.285316 5.99643709999999963 -1.67128729999999992 -16.280617 5.97355459999999994 -1."
-		+ "65682269999999998 -16.775196 5.99643709999999963 -1.42168129999999993 -16.766256 5.97355459999999994 -1.4093777999999999 -17.163963 5.99897810000000042 -1.03291230000000001 -17.151661 5.980979 -1.02397289999999996 -17.41357 5.99643709999999963 -0.54303396000000004 -17.399105 5.97355459999999994 -0.53833419000000005 -17.499578 5.99643709999999963 -1.890627e-09 -17.484369 5.97355459999999994 4.1316088000000004e-09 -17.41357 5.99643709999999963 0.54303396000000004 -17.399105 5.97355459999999994 0.53833419000000005 -17.163963 5.99643709999999963 1.0329117000000001 -17.151661 5.97355459999999994 1.02397260000000001 -16.775194 5.99769880000000022 1.42168129999999993 -16.766256 5.977241 1.40937709999999994 -16.285316 5.99643709999999963 1.67128729999999992 -16.280617 5.97355459999999994 1.65682229999999997 -15.742283 5.99643709999999963 1.75729420000000003 -15.742283 5.97355459999999994 1.74208589999999997 -15.199249 5.99643709999999963 1.67128729999999992 -15.203949 5.97355459999999994 1.65682229999999997 -14.70937"
-		+ "2 5.99643709999999963 1.42168129999999993 -14.71831 5.97355459999999994 1.40937709999999994 -14.320601 5.99897810000000042 1.0329117000000001 -14.332906 5.980979 1.02397260000000001 -14.070995 5.99643709999999963 0.54303396000000004 -14.085461 5.97355459999999994 0.53833419000000005 -13.984989 5.99643709999999963 -1.8906259000000001e-09 -14.000196 5.97355459999999994 4.1316110999999995e-09 -14.321148 6.01198579999999971 1.03251430000000011 -14.709768 6.01297429999999977 1.42113439999999991 -15.199458 6.01297429999999977 1.67064440000000003 -15.742283 6.01297429999999977 1.75661869999999998 -16.285109 6.01297429999999977 1.67064440000000003 -16.774797 6.01248360000000037 1.42113439999999991 -17.163418 6.01297429999999977 1.03251430000000011 -17.412928 6.01297429999999977 0.54282516000000003 -17.498903 6.01297429999999977 -3.6189151999999999e-09 -17.412928 6.01297429999999977 -0.54282516000000003 -17.163418 6.01198579999999971 -1.03251479999999995 -16.774797 6.01297429999999977 -1.4211351000000001 -16.285109 6."
-		+ "01297429999999977 -1.67064440000000003 -15.742283 6.01297429999999977 -1.75662019999999997 -15.199457 6.01297429999999977 -1.67064440000000003 -14.709768 6.01248360000000037 -1.4211351000000001 -14.321148 6.01297429999999977 -1.03251519999999997 -14.071638 6.01297429999999977 -0.54282540000000001 -13.985664 6.01297429999999977 -3.6189151999999999e-09 -14.071638 6.01297429999999977 0.54282516000000003 -14.293015 6.01198579999999971 1.052955 -14.689327 6.01297429999999977 1.44926859999999991 -14.293495 6.00546359999999968 1.05260569999999998 -14.689677 6.00468250000000037 1.44878789999999991 -15.188711 6.01297429999999977 1.70371830000000002 -15.188895 6.00468250000000037 1.70315290000000008 -15.742283 6.01297429999999977 1.7913945 -15.742283 6.00468250000000037 1.79080020000000006 -16.295855 6.01297429999999977 1.70371830000000002 -16.295671 6.00468250000000037 1.70315290000000008 -16.795238 6.01248360000000037 1.44926859999999991 -16.794889 6.00507019999999958 1.44878789999999991 -17.191551 6.0129742999999997"
-		+ "7 1.052955 -17.191071 6.00468250000000037 1.05260569999999998 -17.446001 6.01297429999999977 0.55357133999999997 -17.445436 6.00468250000000037 0.55338781999999997"
-		)
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pt[498:663]" (" -17.533678 6.01297429999999977 -9.5815125000000011e-09 -17.533083 6.00468250000000037 1.2419284e-09 -17.446001 6.01297429999999977 -0.55357133999999997 -17.445436 6.00468250000000037 -0.55338781999999997 -17.191551 6.01198579999999971 -1.05295549999999993 -17.191071 6.00546359999999968 -1.052606 -16.795238 6.01297429999999977 -1.44926859999999991 -16.794889 6.00468250000000037 -1.44878829999999992 -16.295855 6.01297429999999977 -1.70371840000000008 -16.295671 6.00468250000000037 -1.70315290000000008 -15.742283 6.01297429999999977 -1.79139540000000008 -15.742283 6.00468250000000037 -1.79080130000000004 -15.188711 6.01297429999999977 -1.70371840000000008 -15.188894 6.00468250000000037 -1.70315290000000008 -14.689327 6.01248360000000037 -1.44926890000000008 -14.689676 6.00507019999999958 -1.4487892 -14.293013 6.01297429999999977 -1.05295589999999994 -14.293493 6.00468250000000037 -1.05260679999999995 -14.038565 6.01297429999999977 -0.55357164000000003 -14.039128 6.00468250000000037 -0.55338812000000004 -13.9508"
-		+ "89 6.01297429999999977 -2.2619148999999997e-08 -13.951483 6.00468250000000037 -1.0245986e-08 -14.038565 6.01297429999999977 0.55357133999999997 -14.03913 6.00468250000000037 0.55338781999999997 -14.119346 6.05802110000000038 -0.52732402 -14.09592 6.05038259999999983 -0.53493546999999997 -14.361713 6.05801769999999973 -1.00304280000000001 -14.341809 6.0503878999999996 -1.01750349999999989 -14.739538 6.052824 -1.38016009999999989 -14.724319 6.04547119999999971 -1.401106 -15.214952 6.05801769999999973 -1.62295790000000006 -15.20735 6.0503878999999996 -1.64635609999999999 -15.742283 6.05802110000000038 -1.70645610000000003 -15.742283 6.05038259999999983 -1.7310878999999999 -16.269608 6.05802110000000038 -1.622937 -16.277218 6.05038259999999983 -1.646363 -16.745337 6.05801489999999987 -1.3805847 -16.759783 6.05039070000000034 -1.40046969999999993 -17.122082 6.04753209999999974 -1.00248270000000006 -17.144146 6.04052349999999993 -1.01851340000000001 -17.365257 6.05801489999999987 -0.52733642000000003 -17.388634 6.0"
-		+ "5039070000000034 -0.53493166000000003 -17.448738 6.05802110000000038 5.9186607000000001e-09 -17.473372 6.05038259999999983 5.6669811000000002e-09 -17.365219 6.05802110000000038 0.52732383999999999 -17.388645 6.05038259999999983 0.53493546999999997 -17.122852 6.05801769999999973 1.00304280000000001 -17.142756 6.0503878999999996 1.0175033 -16.745028 6.052824 1.38015939999999993 -16.760246 6.04547119999999971 1.40110580000000007 -16.269613 6.05801769999999973 1.62295659999999997 -16.277216 6.0503878999999996 1.64635470000000006 -15.742283 6.05802110000000038 1.70645610000000003 -15.742283 6.05038259999999983 1.73108780000000007 -15.214959 6.05802110000000038 1.62293550000000009 -15.207348 6.05038259999999983 1.64636160000000009 -14.739229 6.05801489999999987 1.3805845000000001 -14.724782 6.05039070000000034 1.40046910000000002 -14.362485 6.04753209999999974 1.00248209999999993 -14.34042 6.04052349999999993 1.018513 -14.119308 6.05801489999999987 0.52733642000000003 -14.095932 6.05039070000000034 0.53493166000000"
-		+ "003 -14.035827 6.05802110000000038 5.9186588999999996e-09 -14.011195 6.05038259999999983 5.6669672999999999e-09 -14.119346 5.95866580000000035 -0.52732402 -14.09592 5.96630380000000038 -0.53493546999999997 -14.361713 5.9586686999999996 -1.00304280000000001 -14.341809 5.96629909999999963 -1.01750349999999989 -14.739538 5.96386289999999963 -1.38016009999999989 -14.724319 5.97121519999999961 -1.401106 -15.214952 5.9586686999999996 -1.62295790000000006 -15.20735 5.96629909999999963 -1.64635609999999999 -15.742283 5.95866580000000035 -1.70645610000000003 -15.742283 5.96630380000000038 -1.7310878999999999 -16.269608 5.95866580000000035 -1.622937 -16.277218 5.96630380000000038 -1.64636270000000007 -16.745337 5.958672 -1.3805847 -16.759783 5.96629620000000038 -1.40046969999999993 -17.122082 5.96915439999999986 -1.00248270000000006 -17.144146 5.97616290000000028 -1.01851340000000001 -17.365257 5.958672 -0.52733642000000003 -17.388634 5.96629620000000038 -0.53493166000000003 -17.448738 5.95866580000000035 5.91866160000"
-		+ "00004e-09 -17.473372 5.96630380000000038 5.6669761999999994e-09 -17.365219 5.95866580000000035 0.52732383999999999 -17.388645 5.96630380000000038 0.53493546999999997 -17.122852 5.9586686999999996 1.00304280000000001 -17.142756 5.96629909999999963 1.0175033 -16.745028 5.96386289999999963 1.38015939999999993 -16.760246 5.97121519999999961 1.40110540000000006 -16.269613 5.9586686999999996 1.62295659999999997 -16.277216 5.96629909999999963 1.64635470000000006 -15.742283 5.95866580000000035 1.70645610000000003 -15.742283 5.96630380000000038 1.7310878999999999 -15.214959 5.95866580000000035 1.62293550000000009 -15.207348 5.96630380000000038 1.64636160000000009 -14.739229 5.958672 1.3805845000000001 -14.724782 5.96629620000000038 1.40046910000000002 -14.362485 5.96915439999999986 1.00248209999999993 -14.34042 5.97616290000000028 1.018513 -14.119308 5.958672 0.52733642000000003 -14.095932 5.96629620000000038 0.53493166000000003 -14.035827 5.95866580000000035 5.9186602e-09 -14.011195 5.96630380000000038 5.666965600000"
-		+ "0002e-09 -14.288999 6.01087469999999957 1.055872 -14.287203 6.00952959999999958 1.05717660000000002 -14.03356 6.01147649999999967 0.55519777999999997 -14.031712 6.01009939999999965 0.55579822999999995 -14.686234 6.01147649999999967 1.45352579999999998 -14.685092 6.01009890000000002 1.45509780000000011 -15.187085 6.01147649999999967 1.70872270000000004 -15.186485 6.01009939999999965 1.71057130000000002 -14.289341 6.00655360000000016 1.05562329999999993 -14.287366 6.00786879999999979 1.0570584999999999 -14.03398 6.006144 0.55506098000000004 -14.031947 6.00749870000000019 0.55572182000000003 -14.686495 6.006144 1.45316819999999991 -14.685238 6.00749870000000019 1.454898 -15.187222 6.006144 1.70830210000000005 -15.186562 6.00749870000000019 1.71033609999999991 -15.742283 6.01147649999999967 1.7966565000000001 -15.742283 6.01009939999999965 1.79860020000000009 -15.742283 6.006144 1.79621429999999993 -15.742283 6.00749870000000019 1.79835269999999992 -16.29748 6.01147649999999967 1.70872289999999993 -16.29808 6.010"
-		+ "09939999999965 1.71057130000000002 -16.297344 6.006144 1.70830210000000005 -16.298004 6.00749870000000019 1.71033609999999991 -16.798248 6.01118039999999976 1.45341150000000008 -16.799467 6.00981759999999987 1.4550898000000001 -16.797993 6.00634479999999993 1.45306 -16.799334 6.00768180000000029 1.45490589999999997 -17.195808 6.01147649999999967 1.05604790000000004 -17.197382 6.01009939999999965 1.05719030000000003 -17.195452 6.006144 1.05578789999999989 -17.197182 6.00749870000000019 1.057045 -17.451006 6.01147649999999967 0.55519759999999996 -17.452854 6.01009939999999965 0.55579822999999995 -17.450584 6.006144 0.55506098000000004 -17.45262 6.00749870000000019 0.55572182000000003 -17.53894 6.01147649999999967 -7.8203080000000005e-09 -17.540884 6.01009939999999965 -6.1930421000000006e-09 -17.538498 6.006144 -1.2248125e-09 -17.540636 6.00749870000000019 -3.1106533e-09 -17.451006 6.01147649999999967 -0.55519777999999997 -17.452854 6.01009939999999965 -0.55579822999999995 -17.450584 6.006144 -0.5550607400000000"
-		+ "5 -17.45262 6.00749870000000019 -0.55572151999999997 -17.195566 6.01087469999999957 -1.0558723000000001 -17.197363 6.00952959999999958 -1.05717689999999997 -17.195225 6.00655360000000016 -1.05562369999999994 -17.197199 6.00786879999999979 -1.05705870000000002 -16.798332 6.01147649999999967 -1.45352609999999993 -16.799475 6.01009890000000002 -1.45509869999999997 -16.798071 6.006144 -1.45316840000000003 -16.799328 6.00749870000000019 -1.45489819999999992 -16.29748 6.01147649999999967 -1.70872289999999993 -16.29808 6.01009939999999965 -1.71057130000000002 -16.297344 6.006144 -1.70830210000000005 -16.298004 6.00749870000000019 -1.71033609999999991 -15.742283 6.01147649999999967 -1.7966572999999999 -15.742283 6.01009939999999965 -1.79860130000000007 -15.742283 6.006144 -1.79621539999999991 -15.742283 6.00749870000000019 -1.79835379999999989 -15.187085 6.01147649999999967 -1.70872320000000011 -15.186484 6.01009939999999965 -1.71057149999999991"
-		)
-		2 "|Cushion:Cushion|Cushion:CushionShape" "pt[664:681]" " -15.187222 6.006144 -1.70830210000000005 -15.186561 6.00749870000000019 -1.71033619999999997 -14.686317 6.01118039999999976 -1.45341220000000004 -14.685098 6.00981759999999987 -1.45509050000000006 -14.686573 6.00634479999999993 -1.45306069999999998 -14.685231 6.00768180000000029 -1.4549067 -14.288756 6.01147649999999967 -1.056049 -14.287184 6.01009939999999965 -1.05719150000000006 -14.289113 6.006144 -1.05578890000000003 -14.287384 6.00749870000000019 -1.05704590000000009 -14.033559 6.01147649999999967 -0.55519783 -14.031711 6.01009939999999965 -0.55579847000000004 -14.033979 6.006144 -0.55506122000000002 -14.031946 6.00749870000000019 -0.55572206000000002 -13.945626 6.01147649999999967 -1.5717445000000001e-08 -13.943683 6.01009939999999965 -1.1789284e-08 -13.946069 6.006144 -7.4420615999999995e-09 -13.94393 6.00749870000000019 -7.6454913999999994e-09";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "_UNKNOWN_REF_NODE_";
 	rename -uid "9E49CB18-42D5-6173-2B1F-1DB0ED3583AA";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -13460,32 +13363,12 @@ createNode reference -n "LampRN";
 	rename -uid "F1A67501-44C1-BFC0-FA80-F9886127A275";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LampRN"
-		"LampRN" 0;
+		"LampRN" 0
+		"LampRN" 2
+		2 "|Lamp:Lamp" "rotatePivot" " -type \"double3\" 1.863 9.07 -5.944"
+		2 "|Lamp:Lamp" "scalePivot" " -type \"double3\" 1.863 9.07 -5.944";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "Bookshelf_MineRN";
-	rename -uid "BD6F7CD9-4CEB-5C87-643A-41A9AF26249A";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Bookshelf_MineRN";
-createNode reference -n "WallsRN";
-	rename -uid "A16B3D40-40B5-919D-75F9-30AD0B528832";
-	setAttr -s 3 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"WallsRN"
-		"WallsRN" 3
-		5 4 "WallsRN" "|Walls:Wall_Windowed|Walls:Wall_WindowedShape.instObjGroups.objectGroups[0].objectGrpColor" 
-		"WallsRN.placeHolderList[1]" ""
-		5 4 "WallsRN" "|Walls:Wall_Windowed|Walls:Wall_WindowedShape.instObjGroups.objectGroups[1].objectGrpColor" 
-		"WallsRN.placeHolderList[2]" ""
-		5 4 "WallsRN" "|Walls:Wall_Windowed|Walls:Wall_WindowedShape.instObjGroups.objectGroups[2].objectGrpColor" 
-		"WallsRN.placeHolderList[3]" "";
-createNode reference -n "Vase_DecorativeRN";
-	rename -uid "6C126DB4-4FCA-2D38-1BA5-16B4EDF93ECA";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Vase_DecorativeRN";
 createNode polyPlanarProj -n "polyPlanarProj1";
 	rename -uid "DA9B2B0B-446E-14A7-B8EF-72ADBAA0B976";
 	setAttr ".uopa" yes;
@@ -13527,6 +13410,1412 @@ createNode polyTweakUV -n "polyTweakUV1";
 		 -5.9604645e-08 -2.9802322e-08 -5.9604645e-08 -5.9604645e-08 -5.9604645e-08 0 -5.9604645e-08
 		 0 -5.9604645e-08 -1.1920929e-07 -5.9604645e-08 0 -5.9604645e-08 1.4901161e-08 0 -2.9802322e-08
 		 0 0 0 0 0 0 0 -2.9802322e-08 0 -5.9604645e-08 0 0 0 0 0 -1.1920929e-07 0 0 0;
+createNode reference -n "CushionRN1";
+	rename -uid "40C86961-49A5-B81F-7262-05BA7D709F3B";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"CushionRN1"
+		"CushionRN1" 0
+		"CushionRN1" 686
+		2 "|Cushion1:Cushion" "translate" " -type \"double3\" 0 0 0"
+		2 "|Cushion1:Cushion" "rotatePivot" " -type \"double3\" -16.01896558833711026 3.48969323122375652 -0.051500113252980206"
+		
+		2 "|Cushion1:Cushion" "scalePivot" " -type \"double3\" -16.01896558833711026 3.48969323122375652 -0.051500113252980206"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts" " -s 682"
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[0]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[1]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[2]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[3]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[4]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[5]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[6]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[7]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[8]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[9]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[10]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[11]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[12]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[13]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[14]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[15]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[16]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[17]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[18]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[19]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[20]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[21]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[22]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[23]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[24]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[25]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[26]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[27]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[28]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[29]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[30]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[31]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[32]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[33]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[34]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[35]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[36]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[37]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[38]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[39]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[40]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[41]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[42]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[43]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[44]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[45]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[46]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[47]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[48]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[49]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[50]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[51]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[52]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[53]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[54]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[55]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[56]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[57]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[58]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[59]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[60]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[61]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[62]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[63]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[64]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[65]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[66]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[67]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[68]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[69]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[70]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[71]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[72]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[73]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[74]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[75]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[76]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[77]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[78]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[79]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[80]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[81]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[82]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[83]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[84]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[85]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[86]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[87]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[88]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[89]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[90]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[91]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[92]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[93]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[94]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[95]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[96]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[97]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[98]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[99]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[100]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[101]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[102]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[103]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[104]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[105]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[106]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[107]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[108]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[109]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[110]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[111]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[112]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[113]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[114]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[115]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[116]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[117]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[118]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[119]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[120]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[121]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[122]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[123]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[124]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[125]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[126]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[127]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[128]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[129]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[130]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[131]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[132]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[133]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[134]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[135]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[136]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[137]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[138]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[139]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[140]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[141]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[142]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[143]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[144]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[145]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[146]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[147]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[148]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[149]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[150]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[151]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[152]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[153]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[154]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[155]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[156]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[157]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[158]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[159]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[160]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[161]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[162]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[163]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[164]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[165]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[166]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[167]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[168]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[169]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[170]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[171]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[172]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[173]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[174]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[175]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[176]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[177]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[178]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[179]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[180]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[181]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[182]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[183]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[184]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[185]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[186]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[187]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[188]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[189]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[190]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[191]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[192]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[193]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[194]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[195]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[196]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[197]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[198]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[199]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[200]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[201]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[202]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[203]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[204]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[205]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[206]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[207]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[208]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[209]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[210]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[211]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[212]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[213]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[214]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[215]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[216]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[217]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[218]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[219]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[220]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[221]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[222]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[223]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[224]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[225]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[226]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[227]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[228]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[229]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[230]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[231]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[232]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[233]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[234]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[235]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[236]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[237]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[238]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[239]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[240]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[241]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[242]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[243]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[244]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[245]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[246]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[247]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[248]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[249]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[250]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[251]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[252]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[253]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[254]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[255]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[256]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[257]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[258]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[259]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[260]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[261]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[262]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[263]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[264]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[265]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[266]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[267]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[268]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[269]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[270]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[271]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[272]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[273]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[274]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[275]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[276]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[277]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[278]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[279]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[280]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[281]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[282]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[283]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[284]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[285]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[286]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[287]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[288]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[289]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[290]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[291]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[292]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[293]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[294]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[295]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[296]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[297]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[298]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[299]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[300]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[301]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[302]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[303]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[304]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[305]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[306]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[307]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[308]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[309]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[310]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[311]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[312]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[313]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[314]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[315]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[316]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[317]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[318]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[319]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[320]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[321]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[322]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[323]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[324]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[325]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[326]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[327]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[328]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[329]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[330]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[331]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[332]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[333]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[334]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[335]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[336]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[337]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[338]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[339]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[340]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[341]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[342]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[343]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[344]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[345]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[346]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[347]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[348]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[349]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[350]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[351]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[352]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[353]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[354]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[355]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[356]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[357]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[358]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[359]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[360]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[361]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[362]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[363]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[364]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[365]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[366]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[367]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[368]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[369]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[370]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[371]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[372]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[373]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[374]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[375]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[376]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[377]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[378]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[379]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[380]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[381]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[382]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[383]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[384]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[385]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[386]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[387]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[388]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[389]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[390]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[391]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[392]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[393]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[394]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[395]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[396]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[397]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[398]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[399]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[400]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[401]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[402]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[403]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[404]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[405]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[406]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[407]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[408]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[409]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[410]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[411]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[412]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[413]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[414]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[415]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[416]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[417]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[418]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[419]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[420]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[421]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[422]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[423]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[424]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[425]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[426]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[427]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[428]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[429]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[430]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[431]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[432]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[433]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[434]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[435]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[436]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[437]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[438]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[439]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[440]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[441]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[442]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[443]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[444]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[445]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[446]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[447]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[448]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[449]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[450]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[451]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[452]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[453]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[454]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[455]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[456]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[457]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[458]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[459]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[460]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[461]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[462]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[463]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[464]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[465]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[466]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[467]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[468]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[469]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[470]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[471]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[472]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[473]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[474]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[475]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[476]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[477]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[478]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[479]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[480]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[481]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[482]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[483]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[484]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[485]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[486]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[487]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[488]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[489]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[490]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[491]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[492]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[493]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[494]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[495]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[496]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[497]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[498]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[499]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[500]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[501]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[502]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[503]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[504]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[505]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[506]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[507]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[508]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[509]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[510]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[511]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[512]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[513]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[514]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[515]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[516]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[517]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[518]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[519]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[520]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[521]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[522]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[523]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[524]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[525]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[526]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[527]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[528]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[529]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[530]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[531]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[532]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[533]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[534]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[535]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[536]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[537]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[538]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[539]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[540]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[541]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[542]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[543]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[544]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[545]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[546]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[547]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[548]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[549]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[550]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[551]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[552]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[553]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[554]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[555]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[556]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[557]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[558]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[559]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[560]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[561]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[562]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[563]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[564]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[565]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[566]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[567]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[568]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[569]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[570]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[571]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[572]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[573]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[574]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[575]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[576]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[577]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[578]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[579]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[580]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[581]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[582]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[583]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[584]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[585]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[586]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[587]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[588]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[589]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[590]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[591]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[592]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[593]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[594]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[595]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[596]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[597]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[598]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[599]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[600]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[601]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[602]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[603]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[604]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[605]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[606]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[607]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[608]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[609]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[610]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[611]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[612]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[613]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[614]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[615]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[616]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[617]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[618]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[619]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[620]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[621]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[622]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[623]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[624]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[625]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[626]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[627]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[628]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[629]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[630]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[631]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[632]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[633]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[634]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[635]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[636]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[637]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[638]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[639]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[640]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[641]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[642]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[643]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[644]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[645]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[646]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[647]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[648]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[649]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[650]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[651]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[652]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[653]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[654]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[655]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[656]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[657]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[658]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[659]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[660]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[661]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[662]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[663]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[664]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[665]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[666]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[667]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[668]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[669]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[670]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[671]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[672]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[673]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[674]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[675]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[676]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[677]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[678]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[679]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[680]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001"
+		
+		2 "|Cushion1:Cushion|Cushion1:CushionShape" "pnts[681]" " -type \"float3\" -16.018965 3.48969320000000005 -0.051500112000000001";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "WallsRN1";
+	rename -uid "DB2B5ACF-4BE8-D085-C211-75A64BEEF836";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"WallsRN1"
+		"WallsRN1" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Vase_DecorativeRN1";
+	rename -uid "4AB71C53-4CD5-9E8C-35F4-27BCC25A68BF";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Vase_DecorativeRN1"
+		"Vase_DecorativeRN1" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Bookshelf_MineRN";
+	rename -uid "7486E283-4B2E-2A58-FA74-CF898D3B048E";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Bookshelf_MineRN"
+		"Bookshelf_MineRN" 0;
+lockNode -l 1 ;
+createNode polyPlanarProj -n "polyPlanarProj2";
+	rename -uid "B6CD9B5C-427B-5EC5-E5C0-1FA231E1CC05";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:99]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".ro" -type "double3" -90 0 0 ;
+	setAttr ".ps" -type "double2" 67.374412536621094 67.374412536621094 ;
+	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -13545,14 +14834,12 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 5 ".r";
-select -ne :lightList1;
-	setAttr -s 3 ".l";
+	setAttr -s 8 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 174 ".dsm";
+	setAttr -s 173 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 3 ".gn";
 select -ne :initialParticleSE;
@@ -13563,8 +14850,6 @@ select -ne :defaultRenderGlobals;
 	setAttr ".dss" -type "string" "lambert1";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
-select -ne :defaultLightSet;
-	setAttr -s 3 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -13579,10 +14864,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr ":initialShadingGroup.mwc" "WallsRN.phl[1]";
-connectAttr ":initialShadingGroup.mwc" "WallsRN.phl[2]";
-connectAttr ":initialShadingGroup.mwc" "WallsRN.phl[3]";
-connectAttr "polyTweakUV1.out" "FloorShape.i";
+connectAttr "polyPlanarProj2.out" "FloorShape.i";
 connectAttr "polyTweakUV1.uvtk[0]" "FloorShape.uvst[0].uvtw";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -13596,14 +14878,12 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-connectAttr "_UNKNOWN_REF_NODE_.ur" "CushionRN.ur";
 connectAttr "polySurfaceShape1.o" "polyPlanarProj1.ip";
 connectAttr "FloorShape.wm" "polyPlanarProj1.mp";
 connectAttr "polyPlanarProj1.out" "polyTweakUV1.ip";
+connectAttr "polyTweakUV1.out" "polyPlanarProj2.ip";
+connectAttr "FloorShape.wm" "polyPlanarProj2.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "keyShape.ltd" ":lightList1.l" -na;
-connectAttr "rimShape.ltd" ":lightList1.l" -na;
-connectAttr "fillShape.ltd" ":lightList1.l" -na;
 connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Bookshelf_1Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Bk_Group_1Shape.iog" ":initialShadingGroup.dsm" -na;
@@ -13743,7 +15023,4 @@ connectAttr "|Bookshelf_1|Bk_Group_4|pasted__pasted__BookGrooup1|pasted__pasted_
 connectAttr "pasted__pasted__pasted__book3Shape.iog" ":initialShadingGroup.dsm" 
 		-na;
 connectAttr "pasted__pasted__book7Shape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "key.iog" ":defaultLightSet.dsm" -na;
-connectAttr "rim.iog" ":defaultLightSet.dsm" -na;
-connectAttr "fill.iog" ":defaultLightSet.dsm" -na;
 // End of Table room.ma
