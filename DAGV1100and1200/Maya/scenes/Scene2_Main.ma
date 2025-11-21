@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2_Main.ma
-//Last modified: Fri, Nov 21, 2025 03:03:32 PM
+//Last modified: Fri, Nov 21, 2025 03:25:29 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "02C7777C-4685-048F-3AA2-409A9B10D64F";
+fileInfo "UUID" "C1CA85F7-4AA3-8973-79DB-D5A51C2F8A81";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "47ED6ADB-495A-9606-ECEA-34BFB3662F2E";
@@ -3507,6 +3507,11 @@ createNode polySplit -n "polySplit8";
 	setAttr -s 2 ".d[0:1]"  -2147483499 -2147483557;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "E6A1C599-4776-E0DD-F62D-00A57ACA8E56";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -44.047617297323995 -315.4761779402935 ;
+	setAttr ".tgi[0].vh" -type "double2" 421.42855468250531 44.047617297323995 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
