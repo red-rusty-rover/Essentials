@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Table room.ma
-//Last modified: Fri, Nov 21, 2025 10:26:31 AM
+//Last modified: Thu, Dec 11, 2025 07:02:38 PM
 //Codeset: 1252
 file -rdi 1 -ns "Table_Mine" -rfn "Table_MineRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table_Mine.ma";
@@ -38,18 +38,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "CFE40233-47D1-368D-A4F6-F686FD52102A";
+fileInfo "UUID" "99C2888E-4AE4-09D8-A5D3-A4AA2C8B920C";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F3E703AC-4343-8020-D925-DD9EFCA81792";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -86.042648458909952 25.570412545057877 -26.618639850877514 ;
-	setAttr ".r" -type "double3" -11.138352745648849 4573.399999999775 0 ;
+	setAttr ".t" -type "double3" -153.6821925557592 68.805513019224691 -84.145801959245517 ;
+	setAttr ".r" -type "double3" -8.7383527448596112 4552.2000000000262 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5789213-4C98-F1D2-7652-77AFDA24C4FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 85.878997636319141;
+	setAttr ".coi" 213.59912966409667;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -424,23 +424,24 @@ createNode mesh -n "FloorShape" -p "Floor";
 	setAttr ".dsm" 1;
 createNode transform -n "aiAreaLight1";
 	rename -uid "535F4DD3-4120-77C2-3AB0-D6B65A95D632";
-	setAttr ".t" -type "double3" -28.948260156184048 50.383529460515653 -34.517056667756492 ;
-	setAttr ".r" -type "double3" 354.34022666629841 -163.77312360796083 -79.270950099980809 ;
-	setAttr ".s" -type "double3" 2.5129876570090017 2.5129876570090017 2.5129876570090017 ;
+	setAttr ".t" -type "double3" 33.609550925368957 10.432664166459602 16.534857069739417 ;
+	setAttr ".r" -type "double3" 198.46717149057628 -111.86631024221988 -6.4802534372286251 ;
+	setAttr ".s" -type "double3" 10.56845679536497 14.278316602289255 10.56845679536497 ;
 createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
 	rename -uid "FCC9BD16-4583-67A8-FFDC-D7925C15AAE2";
 	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
-	setAttr ".intensity" 5.5128207206726074;
+	setAttr ".intensity" 7.0512819290161133;
 	setAttr ".ai_exposure" 11.461038589477539;
 	setAttr ".ai_translator" -type "string" "quad";
 	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
 createNode transform -n "aiAreaLight2";
 	rename -uid "03B87E77-42D4-EFC4-0B4A-A5849B9379B6";
-	setAttr ".t" -type "double3" 2.0431265626659547 13.548352891072007 -5.729533380704332 ;
+	setAttr ".t" -type "double3" 2.0431265626659547 13.545292861022787 -5.729533380704332 ;
 	setAttr ".r" -type "double3" -89.999999999999901 240.00000000000003 0 ;
+	setAttr ".s" -type "double3" 1.5388821258386483 2.0223938931658418 6.5846965763163965 ;
 createNode aiAreaLight -n "aiAreaLightShape2" -p "aiAreaLight2";
 	rename -uid "501814B5-44E1-5E79-8B17-5DB6BBDB21D4";
 	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
@@ -451,21 +452,67 @@ createNode aiAreaLight -n "aiAreaLightShape2" -p "aiAreaLight2";
 	setAttr ".ai_exposure" 3.0194804668426514;
 	setAttr ".ai_translator" -type "string" "quad";
 	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
+createNode transform -n "pasted__aiAreaLight1";
+	rename -uid "D2E440D1-4B0B-0146-1F50-EEA81A47058D";
+	setAttr ".t" -type "double3" 33.609550925368957 10.432664166459602 -17.384738192339768 ;
+	setAttr ".r" -type "double3" 18.467171490576277 -68.133689757780104 173.51974656277139 ;
+	setAttr ".s" -type "double3" 10.568456795364972 14.278316602289259 10.568456795364972 ;
+createNode aiAreaLight -n "pasted__aiAreaLightShape1" -p "pasted__aiAreaLight1";
+	rename -uid "B0607AEB-4DE9-20D3-B9B2-34A762E97DF1";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".intensity" 7.0512819290161133;
+	setAttr ".ai_exposure" 11.461038589477539;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
+createNode transform -n "pasted__aiAreaLight2";
+	rename -uid "64767307-4490-DCC1-B1B4-6493604E6D66";
+	setAttr ".t" -type "double3" -4.9260332000537019 63.986119155668447 16.440731067865599 ;
+	setAttr ".r" -type "double3" 272.5119864163745 -111.86631024221978 -6.4802534372283702 ;
+	setAttr ".s" -type "double3" 22.725607566181509 28.141332390856054 22.725607566181509 ;
+createNode aiAreaLight -n "pasted__aiAreaLightShape2" -p "pasted__aiAreaLight2";
+	rename -uid "BC057F2C-4801-E1C4-DA0E-B7BA41CECD29";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".intensity" 5.3205127716064453;
+	setAttr ".ai_exposure" 11.461038589477539;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
+createNode transform -n "camera1";
+	rename -uid "EFA37AEF-4B5A-51BD-F652-B09E3BC72011";
+	setAttr ".t" -type "double3" -23.772491146993346 16.415648064535336 -14.240714453364314 ;
+	setAttr ".r" -type "double3" -20.815520032133701 -126.454084327579 0.48505460511249227 ;
+createNode camera -n "cameraShape1" -p "camera1";
+	rename -uid "ED4A6A2F-48CF-839F-CC86-44B24EBBFA16";
+	setAttr -k off ".v";
+	setAttr ".rnd" no;
+	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
+	setAttr ".ff" 0;
+	setAttr ".fl" 23.172024821784351;
+	setAttr ".coi" 21.178379449455345;
+	setAttr ".ow" 30;
+	setAttr ".imn" -type "string" "camera1";
+	setAttr ".den" -type "string" "camera1_depth";
+	setAttr ".man" -type "string" "camera1_mask";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "3449C723-42D0-C74C-26BD-86816B301B1F";
+	rename -uid "CD97B97B-4E73-CB75-A6A6-25B5484E357A";
 	setAttr -s 15 ".lnk";
 	setAttr -s 15 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2726C08A-4251-DC4E-70AF-AAAF66150BC6";
+	rename -uid "9160F049-4D7F-B484-0DD0-F7A3EB12ED67";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D6A0B041-4C68-C193-EA88-BB8A99110AD6";
+	rename -uid "96A83E41-495B-0A86-D0E0-DC8E037AF46D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "605F022F-43FD-BB20-7B63-FCB08BF6A52A";
+	rename -uid "F86D9AC9-47D4-90CD-2BB1-629D431CE5FF";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E881ED15-4D0A-4753-55C8-24956A057F67";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "01F0E029-4EF2-8F91-7AE9-FD9A176E00F8";
+	rename -uid "80E96549-4253-9553-C262-CAB5C8782CE1";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "08539A0F-47D7-B606-7669-A2823617C1F5";
 	setAttr ".g" yes;
@@ -483,7 +530,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
 		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
-		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
+		+ "            -camera \"|camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n"
 		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1117\n            -height 684\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
@@ -512,8 +559,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
 		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n"
 		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -701,15 +748,15 @@ createNode reference -n "Table_MineRN";
 		2 "|Table_Mine:Table|Table_Mine:Tbl_Leg_4|Table_Mine:Tbl_Leg_Shape4" "pt[332:375]" 
 		" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
+		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_4|Table_Mine:Tbl_Leg_Shape4.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_1|Table_Mine:Tbl_Leg_Shape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_2|Table_Mine:Tbl_Leg_Shape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_4|Table_Mine:Tbl_Leg_Shape4.instObjGroups" 
+		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_3|Table_Mine:Tbl_Leg_Shape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Table_Mine:Table|Table_Mine:TableShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_3|Table_Mine:Tbl_Leg_Shape3.instObjGroups" 
+		3 "|Table_Mine:Table|Table_Mine:Tbl_Leg_2|Table_Mine:Tbl_Leg_Shape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "Table_MineRN" "|Table_Mine:Table|Table_Mine:TableShape.instObjGroups" 
 		"Table_MineRN.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -885,20 +932,20 @@ createNode reference -n "Round_ChairRN";
 		2 "|Round_Chair:Chair|Round_Chair:Ch_Armrest_L|Round_Chair:Ch_Armrest_LShape" 
 		"pt[0:55]" " -s 56 -type \"float3\" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
-		3 "|Round_Chair:Chair|Round_Chair:Ch_Leg_3|Round_Chair:Ch_Leg_Shape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Round_Chair:Chair|Round_Chair:Ch_Armrest_R|Round_Chair:Ch_Armrest_RShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Round_Chair:Chair|Round_Chair:Ch_Leg_2|Round_Chair:Ch_Leg_Shape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Round_Chair:Chair|Round_Chair:Ch_Armrest_L|Round_Chair:Ch_Armrest_LShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Round_Chair:Chair|Round_Chair:Ch_Back|Round_Chair:Ch_BackShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Round_Chair:Chair|Round_Chair:Ch_Leg_1|Round_Chair:Ch_Leg_Shape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Round_Chair:Chair|Round_Chair:ChairShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
+		3 "|Round_Chair:Chair|Round_Chair:Ch_Armrest_L|Round_Chair:Ch_Armrest_LShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Round_Chair:Chair|Round_Chair:Ch_Back|Round_Chair:Ch_BackShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Round_Chair:Chair|Round_Chair:Ch_Leg_2|Round_Chair:Ch_Leg_Shape2.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Round_Chair:Chair|Round_Chair:Ch_Leg_3|Round_Chair:Ch_Leg_Shape3.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Round_Chair:Chair|Round_Chair:Ch_Armrest_R|Round_Chair:Ch_Armrest_RShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "Round_ChairRN" "|Round_Chair:Chair|Round_Chair:ChairShape.instObjGroups" 
 		"Round_ChairRN.placeHolderList[1]" ":initialShadingGroup.dsm"
 		5 1 "Round_ChairRN" "|Round_Chair:Chair|Round_Chair:Ch_Leg_1|Round_Chair:Ch_Leg_Shape1.instObjGroups" 
@@ -1139,8 +1186,6 @@ createNode reference -n "WallsRN1";
 		
 		2 "|Walls1:Wall_Windowed|Walls1:Wall_WindowedShape" "displayFacesWithGroupId" 
 		" 0"
-		3 "|Walls1:Wall|Walls1:WallShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
 		3 "Walls1:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Walls1:groupId1.groupId" "|Walls1:Wall_Windowed|Walls1:Wall_WindowedShape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
@@ -1160,8 +1205,10 @@ createNode reference -n "WallsRN1";
 		""
 		3 "|Walls1:Wall_Windowed|Walls1:Wall_WindowedShape.instObjGroups.objectGroups[2]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Walls1:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Walls1:groupId3.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "Walls1:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "|Walls1:Wall|Walls1:WallShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
 		5 1 "WallsRN1" "|Walls1:Wall|Walls1:WallShape.instObjGroups" "WallsRN1.placeHolderList[1]" 
 		":initialShadingGroup.dsm"
 		5 1 "WallsRN1" "|Walls1:Wall_Windowed|Walls1:Wall_WindowedShape.instObjGroups" 
@@ -1279,13 +1326,13 @@ createNode reference -n "Vase_DecorativeRN1";
 		2 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:V_Stick_3|Vase_Decorative1:V_Stick_Shape3" 
 		"pt[0:139]" " -s 140 -type \"float3\" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
-		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:V_Stick_1|Vase_Decorative1:V_Stick_Shape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:Vase_decorativeShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:V_Stick_2|Vase_Decorative1:V_Stick_Shape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:V_Stick_3|Vase_Decorative1:V_Stick_Shape3.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:V_Stick_1|Vase_Decorative1:V_Stick_Shape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:Vase_decorativeShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "Vase_DecorativeRN1" "|Vase_Decorative1:Vase_decorative|Vase_Decorative1:Vase_decorativeShape.instObjGroups" 
 		"Vase_DecorativeRN1.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -2001,155 +2048,155 @@ createNode reference -n "Bookshelf_MineRN";
 		2 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape" 
 		"pt[0:43]" " -s 44 -type \"float3\" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__BookGrooupShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book5|Bookshelf_Mine:pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__BookGrooup1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book2|Bookshelf_Mine:pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:Bk_Group_7Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bookshelf_2Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:Bk_Group_7Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book7|Bookshelf_Mine:pasted__pasted__pasted__book7Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book5|Bookshelf_Mine:pasted__book5Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book6|Bookshelf_Mine:pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:Bk_Group_5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book2|Bookshelf_Mine:pasted__book2Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book3|Bookshelf_Mine:pasted__book3Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book7|Bookshelf_Mine:pasted__pasted__pasted__book7Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__BookGrooupShape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:Bk_Group_6Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:Bk_Group_8Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:Bk_Group_5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__book6|Bookshelf_Mine:pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__BookGrooup1Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:Bk_Group_8Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bookshelf_2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book5|Bookshelf_Mine:pasted__pasted__pasted__book5Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:Bk_Group_6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__BookGrooupShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup|Bookshelf_Mine:pasted__pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__pasted__book6Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_6|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_5|Bookshelf_Mine:pasted__pasted__book4|Bookshelf_Mine:pasted__pasted__book4Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_7|Bookshelf_Mine:pasted__pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book3|Bookshelf_Mine:pasted__pasted__pasted__book3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__pasted__book2|Bookshelf_Mine:pasted__pasted__pasted__book2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bk_Group_8|Bookshelf_Mine:pasted__pasted__BookGrooup1|Bookshelf_Mine:pasted__pasted__book6|Bookshelf_Mine:pasted__pasted__book6Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "Bookshelf_MineRN" "|Bookshelf_Mine:Bookshelf_2|Bookshelf_Mine:Bookshelf_2Shape.instObjGroups" 
 		"Bookshelf_MineRN.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -2770,7 +2817,7 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 8 ".r";
 select -ne :lightList1;
-	setAttr -s 2 ".l";
+	setAttr -s 4 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 4 ".tx";
 select -ne :standardSurface1;
@@ -2792,7 +2839,7 @@ select -ne :defaultRenderGlobals;
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
+	setAttr -s 4 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -3079,6 +3126,8 @@ connectAttr "place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "aiAreaLightShape2.ltd" ":lightList1.l" -na;
+connectAttr "pasted__aiAreaLightShape1.ltd" ":lightList1.l" -na;
+connectAttr "pasted__aiAreaLightShape2.ltd" ":lightList1.l" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
@@ -3086,4 +3135,6 @@ connectAttr "standardSurface2.oc" ":lambert1.c";
 connectAttr "file1.msg" ":initialMaterialInfo.t" -na;
 connectAttr "aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiAreaLight2.iog" ":defaultLightSet.dsm" -na;
+connectAttr "pasted__aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "pasted__aiAreaLight2.iog" ":defaultLightSet.dsm" -na;
 // End of Table room.ma
